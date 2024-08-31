@@ -24,7 +24,7 @@ nav{
     justify-content: space-between;
 }
 nav img{
-    height: 80%;
+    height: 60%;
 }
 #navpart2{
     display: flex;
@@ -40,6 +40,9 @@ nav img{
     color: black;
     font-size: 18px;
     position: relative;
+    transition: all ease 0.4s;
+    font-size: 18px;
+    overflow: hidden;
 }
 #navpart2 h4::after{
     content: '';
@@ -50,9 +53,18 @@ nav img{
     left:0;
     bottom:-100%;
     border-radius: 50%;
-    transition: all ease-in 0.3s;
+    transition: all ease 0.4s;
 }
 #navpart2 h4:hover::after{
     bottom:0;
     border-radius: 0%;
+}
+#navpart2 h4 a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    z-index: 9;
+}
+#navpart2 h4:hover a{
+    color: white;
 }
